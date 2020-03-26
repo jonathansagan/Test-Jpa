@@ -21,6 +21,9 @@ public class TestJpa {
         
         // vérification que la connexion est ok
         LOGGER.log(Level.INFO, "EntityManager : "+entityManager.isOpen());
+        if (entityManager.isOpen()== true) {
+        	System.out.println("la connexion est ok");
+        }
      
         // étape 5 - Fermeture EntityManager
         // entityManager.close();
